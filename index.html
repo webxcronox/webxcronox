@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRONOX :: ARCHIVO CONFIDENCIAL</title>
+    <style>
+        /* ESTILO AGENCIA SECRETA - CRONOX */
+        body {
+            background-color: #0a0a0a;
+            background-image: url('https://i.imgur.com/5X6Qk0a.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #e0e0e0;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            border: 1px solid #333;
+            padding: 20px;
+            background-color: rgba(10, 10, 10, 0.9);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            position: relative;
+        }
+        .agency-header {
+            text-align: center;
+            border-bottom: 1px solid #5c0000;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .agency-logo {
+            font-size: 24px;
+            letter-spacing: 3px;
+            color: #8b0000;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .agency-subtitle {
+            font-style: italic;
+            font-size: 14px;
+            color: #999;
+        }
+        h1 {
+            color: #8b0000;
+            text-align: center;
+            font-size: 22px;
+            letter-spacing: 1px;
+            margin-top: 0;
+        }
+        .confidential {
+            background: rgba(139, 0, 0, 0.1);
+            padding: 15px;
+            border: 1px dashed #5c0000;
+            margin: 20px 0;
+            text-align: center;
+            font-style: italic;
+        }
+        .stamp {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            transform: rotate(15deg);
+            color: #8b0000;
+            font-weight: bold;
+            font-size: 18px;
+            opacity: 0.8;
+            border: 2px solid #8b0000;
+            padding: 5px 10px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .document-id {
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: #777;
+            border-top: 1px solid #333;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .redacted {
+            background-color: #000;
+            color: #000;
+            padding: 2px 5px;
+        }
+        .access-panel {
+            margin-top: 30px;
+        }
+        .login-form input {
+            background: #111;
+            border: 1px solid #333;
+            color: #e0e0e0;
+            padding: 8px;
+            width: 100%;
+            margin-bottom: 15px;
+            font-family: 'Courier New', monospace;
+        }
+        .login-form button {
+            background: #8b0000;
+            color: #e0e0e0;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-family: 'Georgia', serif;
+            width: 100%;
+        }
+        .hidden {
+            display: none;
+        }
+        #secret-message {
+            background: rgba(0, 30, 0, 0.7);
+            border-left: 5px solid #8b0000;
+            padding: 15px;
+            margin-top: 20px;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .secret-link {
+            color: #8b0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .secret-link:hover {
+            text-decoration: underline;
+        }
+
+        /* RESPONSIVE PARA MÓVILES */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            .agency-logo {
+                font-size: 20px;
+            }
+            h1 {
+                font-size: 18px;
+            }
+            .stamp {
+                font-size: 14px;
+                right: 10px;
+            }
+            .login-form button {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="stamp">CONFIDENCIAL</div>
+        
+        <div class="agency-header">
+            <div class="agency-logo">CRONOX</div>
+            <div class="agency-subtitle">Agencia No Gubernamental para el Estudio de Fenómenos Terrestres</div>
+        </div>
+        
+        <h1>INFORME INTERNO #<span class="redacted">X-287</span></h1>
+        
+        <div class="confidential">
+            Este documento es propiedad exclusiva de CRONOX. Su reproducción o distribución no autorizada está estrictamente prohibida.
+        </div>
+        
+        <p><strong>Fecha:</strong> <span class="redacted">██/██/2196</span></p>
+        <p><strong>Ubicación:</strong> <span class="redacted">Sitio-12</span></p>
+        <p><strong>Asunto:</strong> Fenómeno <span class="redacted">"Eclipse Azul"</span></p>
+        
+        <h3>► Hallazgos:</h3>
+        <ul>
+            <li>Patrones de energía anómala detectados en la zona <span class="redacted">[Coordenadas Redactadas]</span>.</li>
+            <li>Evidencia de alteración espacio-temporal (Clasificación <span class="redacted">Nivel Omega</span>).</li>
+            <li>Testigos civiles reportan <span class="redacted">[Datos Suprimidos]</span>.</li>
+        </ul>
+        
+        <h3>► Recomendaciones:</h3>
+        <ul>
+            <li>Máxima contención del área.</li>
+            <li>Desplegar equipo de investigación <span class="redacted">Gamma-7</span>.</li>
+            <li>Eliminar registros públicos del incidente.</li>
+        </ul>
+        
+        <hr style="border-top: 1px solid #5c0000; margin: 20px 0;">
+
+        <div class="access-panel">
+            <h3 style="color: #8b0000; text-align: center;">» ACCESO RESTRINGIDO «</h3>
+            <p style="text-align: center; font-size: 12px; color: #777;">
+                Sistema de Autenticación Segura de Cronox | v3.1.4
+            </p>
+            
+            <div class="login-form">
+                <label for="user">IDENTIFICACIÓN:</label>
+                <input type="text" id="user" placeholder="Agente-XXXX">
+                
+                <label for="pass">CÓDIGO DE ACCESO:</label>
+                <input type="password" id="pass" placeholder="••••••••" style="letter-spacing: 3px;">
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+                    <button onclick="fakeLogin()">
+                        VERIFICAR CREDENCIALES
+                    </button>
+                    
+                    <span style="font-size: 11px; color: #777; cursor: pointer;" onclick="fakeBiometric()">
+                        ▣ Autenticación biométrica
+                    </span>
+                </div>
+            </div>
+            
+            <p id="error-msg" style="font-size: 11px; color: #8b0000; text-align: center; margin-top: 15px; display: none;">
+                ⚠️ Intento fallido. Quedan <span id="attempts-left">3</span> intentos antes de medidas de seguridad.
+            </p>
+        </div>
+
+        <div id="secret-message" class="hidden">
+            <h3 style="color: #10FF10; text-align: center;">» MODO SEGURO: NIVEL 1 DESCLASIFICADO «</h3>
+            <p>Acceso concedido bajo protocolo de emergencia. Datos limitados disponibles:</p>
+            <ul>
+                <li><strong>Fenómeno Eclipse Azul:</strong> Posible portal espacio-temporal (teoría no confirmada).</li>
+                <li><strong>Ubicación real:</strong> Cordillera de los Andes, Chile (Sector 44-B).</li>
+                <li><strong>Próxima fase:</strong> Envío de equipo el <span style="color:#8b0000">15/11/2196</span>.</li>
+            </ul>
+            <p style="font-size: 12px; color: #777; text-align: center;">
+                <a href="https://forms.gle/NwDqpPJzbGuHCpBT6" class="secret-link" target="_blank">» Acceder al portal seguro «</a>
+            </p>
+        </div>
+
+        <div class="document-id">
+            ID DOC: CRX-<span class="redacted">█████</span> │ COPIA 1 DE 1 │ AUTODESTRUCCIÓN: ACTIVADA
+        </div>
+    </div>
+
+    <audio id="error-sound" src="https://www.soundjay.com/buttons/sounds/beep-07.mp3"></audio>
+    <audio id="access-sound" src="https://www.soundjay.com/buttons/sounds/beep-05.mp3"></audio>
+
+    <script>
+        let attempts = 0;
+        const maxAttempts = 3;
+
+        function fakeLogin() {
+            document.getElementById("error-sound").play();
+            attempts++;
+            
+            const attemptsLeft = maxAttempts - attempts;
+            const errorMsg = document.getElementById("error-msg");
+            errorMsg.style.display = "block";
+            document.getElementById("attempts-left").textContent = attemptsLeft;
+            
+            if (attempts >= maxAttempts) {
+                setTimeout(() => {
+                    document.getElementById("access-sound").play();
+                    document.querySelector(".access-panel").style.display = "none";
+                    document.getElementById("secret-message").classList.remove("hidden");
+                }, 1000);
+            } else {
+                alert(`⛔ Error de autenticación (${attempts}/3 intentos)`);
+            }
+        }
+
+        function fakeBiometric() {
+            document.getElementById("error-sound").play();
+            alert("🔒 Fallo en escaneo biométrico. Requiere autorización presencial.");
+        }
+    </script>
+</body>
+</html>
